@@ -1,0 +1,18 @@
+{
+  "name": "third",
+  "private": true,
+  "type": "module",
+  "description": "THIRD — visual forge for an AI third hand. Reference export for other sessions.",
+  "dependencies": {
+    "lucide-react": "^0.510.0",
+    "three": "^0.186.0",
+    "zustand": "^5.0.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@tanstack/react-router": "^1.170.0",
+    "@tanstack/react-start": "^1.168.0",
+    "@tanstack/react-query": "^5.101.0"
+  }
+}
