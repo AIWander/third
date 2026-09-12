@@ -2,9 +2,9 @@
 
 A six-chamber visual forge for an AI **third hand** — a 3rd-party anonymous autonomous deputy, not a chatbot. After ignition it talks in the bound voice **and** can reach the operator's hooked-up Grok connectors (Mail, Drive, Calendar).
 
-This repo is a **reference export** for other sessions building something similar. It is not the Grok Build sandbox. Do not rebuild THIRD; steal the contract, the chambers, the hands pattern, and the art.
+This repo is a **reference export** for other sessions building something similar. It is not the Grok Build sandbox. Do not rebuild THIRD; steal the contract, the chambers, the hands pattern, and the copy.
 
-Live product lives in Grok App Builder. This is the source + stills + paste-ready brief.
+Live product lives in Grok App Builder. This is the source + paste-ready brief.
 
 ---
 
@@ -12,7 +12,7 @@ Live product lives in Grok App Builder. This is the source + stills + paste-read
 
 ```text
 Reference repo: https://github.com/AIWander/third
-Clone and read README.md first. Look at docs/stills/ then src/lib/clone/ and src/components/forge/.
+Clone and read README.md first. Then src/lib/clone/ and src/components/forge/.
 
 Product: THIRD — a six-chamber visual forge for an AI “third hand” (clone/deputy), then a live desk that can use the viewer’s hooked-up Grok connectors.
 
@@ -47,7 +47,6 @@ Do not rebuild THIRD. Use this as the contract for the similar thing you are bui
 
 | Path | Why |
 | --- | --- |
-| [docs/stills/](docs/stills/) | Chamber + desk screenshots. See the product before the code. |
 | [src/lib/clone/types.ts](src/lib/clone/types.ts) | Dossier, stages, mandates, traits, chat messages |
 | [src/lib/clone/catalog.ts](src/lib/clone/catalog.ts) | Seed / voice / mandate copy. Chamber 03 unlocks live reach. |
 | [src/lib/clone/hands.ts](src/lib/clone/hands.ts) | Connector tool specs, mandate gating, OpenAI tool shapes |
@@ -58,26 +57,12 @@ Do not rebuild THIRD. Use this as the contract for the similar thing you are bui
 | [src/components/forge/desk.tsx](src/components/forge/desk.tsx) | Live desk: reach chips, Grok login CTA, calendar/mail/files asks |
 | [src/components/forge/engine.ts](src/components/forge/engine.ts) | Raw three.js neural humanoid (no R3F) |
 | [src/lib/app-data/](src/lib/app-data/) | Public gate surface: types, login redirect, pending/readiness |
-| [public/art/](public/art/) | Seed cards: precision, instinct, architect, ghost, fire |
-| [public/og.jpg](public/og.jpg) | 1200×630 share card |
-| [public/x-banner.jpg](public/x-banner.jpg) | 50:11 X feed banner |
+| [public/favicon.svg](public/favicon.svg) | Mark: three bars |
+| [src/lib/og/site.json](src/lib/og/site.json) | Brand: title THIRD, type x:game |
 
 `src/lib/app-data/client.server.ts` is **not** in this export. It is Grok App Builder platform code. The call site is the dynamic import in `hands.server.ts`.
 
----
-
-## Stills
-
-| Chamber | Still |
-| --- | --- |
-| Seed | [docs/stills/chamber-seed.png](docs/stills/chamber-seed.png) |
-| Voice | [docs/stills/chamber-voice.png](docs/stills/chamber-voice.png) |
-| Lattice | [docs/stills/chamber-lattice.png](docs/stills/chamber-lattice.png) |
-| Bond | [docs/stills/chamber-bond.png](docs/stills/chamber-bond.png) |
-| Ignition | [docs/stills/chamber-ignition.png](docs/stills/chamber-ignition.png) |
-| Desk | [docs/stills/desk.png](docs/stills/desk.png) |
-| Desk + briefing | [docs/stills/desk-briefing.png](docs/stills/desk-briefing.png) |
-| Desk + calendar gate | [docs/stills/desk-calendar.png](docs/stills/desk-calendar.png) |
+Seed JPEGs, og.jpg, x-banner.jpg, and chamber stills are **not** in this git export yet (binary payload too large for the connector write path). They live in the live Grok Build product. Catalog image paths still point at `/art/seed-*.jpg`.
 
 ---
 
@@ -115,17 +100,14 @@ Shape: `CloneDossier` in `src/lib/clone/types.ts`.
 - Display: Instrument Serif · Body: IBM Plex Sans
 - Palette: near-black `#07080a`, paper `#ecece8`, cool gray accent `#c5cdd6`, danger `#c45c4a`
 - `og:type`: `x:game` (`src/lib/og/site.json`)
+- Favicon: three vertical bars (two paper, one accent) on near-black
 
-Seed art is cinematic stills, not icons:
+Seed temperaments (cinematic stills in the live product):
 
-- `public/art/seed-precision.jpg`
-- `public/art/seed-instinct.jpg`
-- `public/art/seed-architect.jpg`
-- `public/art/seed-ghost.jpg`
-- `public/art/seed-fire.jpg`
+- precision · instinct · architect · ghost · fire
 
 ---
 
 ## License
 
-Source in this export is provided as reference for AIWander sessions. Art and stills travel with the repo. Not a standalone deployable Grok Build app.
+Source in this export is provided as reference for AIWander sessions. Not a standalone deployable Grok Build app.
